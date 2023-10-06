@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -9,13 +10,15 @@ header {
     padding-bottom: 20px;
     background: white;
     /* PROBLEM 1: Make the header stick to the top as you scroll */
-
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .content {
     width: 800px;
     /* PROBLEM 2: Align the page content to the center of the screen */
-
+    margin: auto;
 }
 
 #image-banner {
@@ -42,7 +45,7 @@ header {
     overflow: hidden;
     margin-right: 40px;
     /* PROBLEM 3: Give .image-card the appropriate position type */
-
+    position: relative;
 }
 
 .image-card:last-child {
@@ -56,10 +59,10 @@ header {
 .image-card-color-overlay {
     position: absolute;
     /* PROBLEM 4: Move the color overlay to cover the image properly */
-    top: 50px;
-    left: 200px;
+    top: 0;
+    left: 0;
     /* PROBLEM 5: What should the opacity be when there is no hover? */
-    opacity: 0.7;
+    opacity: 0;
     transition: 0.3s;
     background-color: navy;
 }
@@ -67,13 +70,14 @@ header {
 .image-card:hover .image-card-color-overlay {
     /* PROBLEM 5: Pick an opacity for the blue hover effect */
     opacity: 0.7;
+    background-color: navy;
 }
 
 .image-card-text {
     /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
-
-
-
+    position: absolute;
+    bottom: 0;
+    left: 0;
     color: white;
 }
 
@@ -81,21 +85,45 @@ header {
 /* PROBLEM 7: Improve the typography and colors of this page! */
 
 #title {
-
+    font-size: 36px;
+    font-weight: 700;
+    color: #444;
+    margin: 20px 0;
 }
 
 h1 {
-
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #444;
+    margin: 20px 0;
 }
-
 h2 {
-
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #555;
+    margin: 15px 0;
 }
 
 h3 {
-
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #666;
+    margin: 15px 0;
 }
 
 p {
-
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777;
+    margin: 10px 0;
+}
+.image-card-text {
+    font-size: 20px;
+    font-weight: 550;
+    color: white;
+    margin: 10px ;
 }
