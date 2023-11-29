@@ -1,6 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        FINAL
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Initial D Cars</title>
+</head>
+<body>
+
+  <header>
+    <h1>Initial D Cars</h1>
+    <img src="assets/img/logo.png" alt="Header Image" class="header-image">
+    <nav>
+      <a href="#car-showcase">Car Showcase</a>
+      <a href="information.html">Information</a>
+    </nav>
+  </header>
+
+  <section id="car-showcase">
+    <!-- Car showcase content will go here -->
+        <div class="filter">
+            <label for="make-filter">Filter by Stage:</label>
+            <select id="make-filter">
+                <option value="all">All Makes</option>
+                <option value="toyota">Toyota</option>
+                <option value="nissan">Nissan</option>
+                <!-- Add more make options as needed -->
+            </select>
+            </div>
+            <div class="cars">
+                <!-- Car content will go here with images -->
+            </div>
+            <div class="carousel">
+                <div><img src="car1.jpg" alt="Toyota AE-86"></div>
+                <div><img src="car2.jpg" alt="Mazda RX-7 (FC)"></div>
+                <div><img src="car3.jpg" alt="Mazda RX-7 (FD)"></div>
+                <div><img src="car4.jpg" alt="Nissan Skyline GTR (R32)"></div>
+                <div><img src="car5.jpg" alt="Nissan Silvia K's (S13)"></div>
+                <div><img src="car6.jpg" alt="More cars from stage 1 here"></div>
+                <div><img src="car7.jpg" alt="More cars from stage 1 here"></div>
+                <div><img src="car8.jpg" alt="More cars from stage 1 here"></div>
+            </div>
+        </div>
+    
+  </section>
+
+  <section id="information">
+    <!-- Information section content will go here -->
+  </section>
+
+
+  <!-- Add these in the <head> section of your HTML -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+
+  <footer>
+    <p>&copy; 2023 Initial D Cars</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
 </html>
